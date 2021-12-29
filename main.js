@@ -60,12 +60,12 @@ Array(200).fill().forEach(addStar);
 
 // Background
 
-const spaceTexture = new THREE.TextureLoader().load('space.jpg');
+const spaceTexture = new THREE.TextureLoader().load('https://raw.githubusercontent.com/AbhisekGanguly/personal-website-3d/main/space.jpg');
 scene.background = spaceTexture;
 
 // Avatar
 
-const jeffTexture = new THREE.TextureLoader().load('/images/website coral.png');
+const jeffTexture = new THREE.TextureLoader().load('https://raw.githubusercontent.com/AbhisekGanguly/personal-website-3d/main/images/website%20coral.png');
 
 const jeff = new THREE.Mesh(new THREE.BoxGeometry(3, 3, 3), new THREE.MeshBasicMaterial({ map: jeffTexture }));
 
@@ -73,9 +73,9 @@ scene.add(jeff);
 
 // Moon
 
-const moonTexture = new THREE.TextureLoader().load('moon.jpg');
-const normalTexture = new THREE.TextureLoader().load('normal.jpg');
-const plutoTexture = new THREE.TextureLoader().load('pluto-model.jpg');
+const moonTexture = new THREE.TextureLoader().load('https://raw.githubusercontent.com/AbhisekGanguly/personal-website-3d/main/moon.jpg');
+const normalTexture = new THREE.TextureLoader().load('https://raw.githubusercontent.com/AbhisekGanguly/personal-website-3d/main/normal.jpg');
+const plutoTexture = new THREE.TextureLoader().load('https://raw.githubusercontent.com/AbhisekGanguly/personal-website-3d/main/pluto-model.jpg');
 
 const moon = new THREE.Mesh(
   new THREE.SphereGeometry(3, 32, 32),
