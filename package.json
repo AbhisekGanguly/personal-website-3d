@@ -1,15 +1,30 @@
 {
-  "name": "three-demo",
+  "homepage": "https://abhisekganguly.github.io/personal-website-3d/",
+  "name": "personal-website-3d",
   "version": "0.0.0",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy":"gh-pages -d build",
     "dev": "vite",
     "build": "vite build",
     "serve": "vite preview"
   },
   "devDependencies": {
+    "gh-pages": "^3.2.3",
     "vite": "^2.3.0"
   },
   "dependencies": {
     "three": "^0.128.0"
+  },
+  "description": "My personal website with three.js to add 3D effect to it!",
+  "main": "main.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AbhisekGanguly/personal-website-3d.git"
+  },
+  "author": "Abhisek Ganguly",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AbhisekGanguly/personal-website-3d/issues"
   }
 }
